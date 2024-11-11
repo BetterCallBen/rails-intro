@@ -1,0 +1,10 @@
+<h1>Voici la liste des membres de mon app !!</h1>
+<form action="<%= members_path %>">
+  <input type="text" name="search" value="<%= params[:search] %>">
+  <input type="submit">
+</form>
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>

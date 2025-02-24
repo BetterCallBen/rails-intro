@@ -1,0 +1,12 @@
+<h1>Voici les joueurs de l'équipe de France</h1>
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
+<form action="/about" method="get">
+  <input type="text" placeholder="dider" name="query">
+  <input type="submit">
+</form>
+<% <a href="/contact">lien vers la page contact</a> %>
+<%= link_to "lien vers la page contact", contact_path %>
